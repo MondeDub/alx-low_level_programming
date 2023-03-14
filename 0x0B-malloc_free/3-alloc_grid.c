@@ -23,14 +23,14 @@ int **alloc_grid(int width, int height)
 	if (amp == NULL)
 		return (NULL);
 
-	for (x = 0, x < height; x++)
+	for (x = 0; x < height; x++)
 
 	{
 		amp[x] = malloc(sizeof(int) * width);
 
 		if (amp[x] == NULL)
 		{
-			for (, x >= 0; x--)
+			for (; x >= 0; x++)
 			       free(amp[x]);
 
 		free(amp);
@@ -38,7 +38,7 @@ int **alloc_grid(int width, int height)
 	return (NULL);
 		}
 	}
-for (x = 0, x < height; x++)
+for (x = 0; x < height; x++)
 
 {
 	for (y = 0; y < width; y++)
