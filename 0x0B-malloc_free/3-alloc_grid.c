@@ -31,6 +31,7 @@ int **alloc_grid(int width, int height)
 		if (amp[x] == NULL)
 		{
 			for (; x >= 0; x++)
+
 			       free(amp[x]);
 
 		free(amp);
