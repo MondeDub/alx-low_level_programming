@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid - function that returns a pointer to a 2 dimensional array
+ * alloc_grid - nested loop to make grid
  * @width: input elements
  * @height: input elements
  * Return: pointer to 2 dim. array
@@ -11,7 +11,7 @@
 
 int **alloc_grid(int width, int height)
 {
-	int amp;
+	int **amp;
 
 	int x, y;
 
